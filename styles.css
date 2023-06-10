@@ -1,0 +1,23 @@
+* {
+    border: black solid 2px;
+    margin: 5px;
+}
+
+/* html {
+    display: flex;
+    justify-content: center;
+} */
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+}
