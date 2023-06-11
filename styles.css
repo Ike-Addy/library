@@ -1,23 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Kablammo&family=Poppins:wght@600&display=swap');
+
+/* View borders of divs for easier visual editing */
 * {
     border: black solid 2px;
-    margin: 5px;
+    margin: 0px;
 }
 
-/* html {
-    display: flex;
-    justify-content: center;
-} */
-
+/* Centers entire page */
 body {
     margin: 0;
     display: flex;
     justify-content: center;
+    font-family: 'Poppins', sans-serif;
 }
 
-.container {
+/* Main container with all other elements */
+.main-container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     width: 50%;
+}
+
+/* Styling for page title */
+.title {
+    font-size: 4em;
+    display: flex;
+    align-self: flex-start;
+
+    margin-top: 3rem;
+}
+
+
+.title-icon {
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+.title-icon img {
+    width: 20%;
+}
+
+/* Styling for username at the top of the page */
+.fun-username {
+    font-family: 'Kablammo', cursive;
+    font-size: 2em;
+}
+
+/* Styling for greeting */
+.greeting {
+    align-self: flex-start;
+    padding-top: 2rem;
+}
+
+/* Styling for addbook button image */
+.add-book img {
+    width: 4rem;
+}
+
+.add-book {
+    align-self: center;
 }
