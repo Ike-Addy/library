@@ -1,65 +1,61 @@
 @import url('https://fonts.googleapis.com/css2?family=Kablammo&family=Poppins:wght@600&display=swap');
 
 /* View borders of divs for easier visual editing */
-* {
+/* * {
     border: black solid 2px;
     margin: 0px;
+} */
+
+html {
+    display: flex;
+    justify-content: center;
 }
 
 /* Centers entire page */
 body {
-    margin: 0;
     display: flex;
     justify-content: center;
-    font-family: 'Poppins', sans-serif;
-}
-
-/* Main container with all other elements */
-.main-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    font-family: 'Poppins', sans-serif;
     width: 50%;
 }
 
-/* Styling for page title */
-.title {
-    font-size: 4em;
+header {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.container {
+    background-color: rgb(212, 255, 220);
+}
+
+.combine {
     display: flex;
-    align-self: flex-start;
-
-    margin-top: 3rem;
+    gap: 2.5rem;
 }
 
-
-.title-icon {
-    display: flex;
-    align-items: center;
-    margin-left: 2rem;
+.col-md-6 h1 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
 }
 
-.title-icon img {
-    width: 20%;
-}
-
-/* Styling for username at the top of the page */
-.fun-username {
-    font-family: 'Kablammo', cursive;
-    font-size: 2em;
-}
-
-/* Styling for greeting */
-.greeting {
-    align-self: flex-start;
+/* Styling for books icon */
+.icon img {
+    width: 7rem;
     padding-top: 2rem;
 }
 
-/* Styling for addbook button image */
-.add-book img {
-    width: 4rem;
+.info-icon button {
+    border-radius: 50%;
+    background-color: rgb(252, 239, 180);
+    width: 2rem;
+    border: none;
 }
 
-.add-book {
-    align-self: center;
+.rbtn {
+
+}
+
+.delete {
+
 }

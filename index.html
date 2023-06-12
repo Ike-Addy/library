@@ -5,22 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
     <script src="scripts.js" defer></script>
-    <title>Library</title>
+    <title>Little Library</title>
 </head>
 <body>
-    <div class="main-container">
-        <div class="title">Little Library <span class="title-icon"><img src="images/icon.png" alt="some colorful books"></span></div>
-        <div class="greeting">Hello <span class="fun-username">[insert username],</span> <br>
-             Welcome to your little library
+    <header id="main-header">
+        <div class="container">
+          <div class="row">
+            <div class="combine">
+                <div class="col-md-6">
+                    <h1 id="header-title">Little <br> Library</h1>
+                </div>
+                <div class="icon"><img src="images/icon.png" alt="colorful books icon"></div>
+            </div>
+            <div class="col-md-7 align-self-center">
+                <input type="text" class="form-control" id="filter" placeholder="Search Book...">
+            </div>
+          </div>
         </div>
+    </header>
 
+    <table class="table table-light table-hover">
+        <thead>
+          <tr>
+            <th scope="col">Book Name</th>
+            <th scope="col">About</th>
+            <th scope="col">Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>The Life of Pi</td>            
+            <td class="info-icon"><button>ℹ</button></td>
+            <td><input class="rbtn" type="button" value="NOT READ"></td>
+            <td><button class="delete">DELETE</button></td>
+          </tr>
 
-        <button class="add-book"><img src="images/add-button.png" alt="add button"></button>
-        <button class="clear">Clear</button>
-        
-
-
-    </div>
+          <tr>
+            <td>dsadsa</td>
+          </tr>
+        </tbody>
+    </table>
 </body>
 </html>
