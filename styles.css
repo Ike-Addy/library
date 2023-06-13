@@ -52,6 +52,19 @@ header {
     border: none;
 }
 
+.add-space {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.new-btn {
+    width: 4em;
+    height: 4em;
+    margin: 1rem;
+}
+
+
 .rbtn {
 
 }
