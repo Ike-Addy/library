@@ -1,14 +1,17 @@
-const deleteBtn = document.querySelector(".delete");
-const readBtn = document.querySelector(".rbtn");
-const input = document.getElementById("filter");
-const newBook = document.querySelector(".new-btn")
+const filter = document.getElementById("filter");
+const addBookBtn = document.querySelector(".add-btn");
+const removeBtn = document.querySelector(".remove-btn");
+const editBtn = document.querySelector(".edit-btn");
+// const readBtn = document.getElementById("check-1");
 
-input.addEventListener("click", e => {
-    alert('test')
+
+editBtn.addEventListener("click", e => {
+    console.log('remove');
 })
-newBook.addEventListener("click", e => {
-    alert('test')
+addBookBtn.addEventListener("click", e => {
+    console.log('add')
 })
-deleteBtn.addEventListener("click", e => {
-    alert('test')
+
+editBtn.addEventListener("click", e => {
+    console.log('editbtn')
 })

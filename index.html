@@ -10,45 +10,52 @@
     <title>Little Library</title>
 </head>
 <body>
-    <header id="main-header">
-        <div class="container">
-          <div class="row">
-            <div class="combine">
-                <div class="col-md-6">
-                    <h1 id="header-title">Little <br> Library</h1>
-                </div>
-                <div class="icon"><img src="images/icon.png" alt="colorful books icon"></div>
-            </div>
-            <div class="add-space">
-              <div class="col-md-9 align-self-center">
-                  <input type="text" class="form-control" id="filter" placeholder="Search Book...">
+  <header id="main-header">
+      <div class="container">
+        <div class="row">
+          <div class="combine">
+              <div class="col-md-6">
+                  <h1 id="header-title">Little <br> Library</h1>
               </div>
-              <button class="new-btn">➕</button>
+              <div class="icon"><img src="images/icon.png" alt="colorful books icon"></div>
+          </div>
+          <div class="add-space">
+            <div class="col-md-9 align-self-center">
+                <input type="text" class="form-control" id="filter" placeholder="Search Book...">
             </div>
+            <button class="add-btn">+</button>
           </div>
         </div>
-    </header>
+      </div>
+  </header>
 
-    <table class="table table-light table-hover">
-        <thead>
-          <tr>
-            <th scope="col">Book Name</th>
-            <th scope="col">About</th>
-            <th scope="col">Status</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>The Life of Pi</td>            
-            <td class="info-icon"><button>ℹ</button></td>
-            <td><input class="rbtn" type="button" value="NOT READ"></td>
-            <td><button class="delete">DELETE</button></td>
-          </tr>
+<!-- *Reminder* Inputs have to have different id's and labels otherwise
+the page is unsure which element to point to. I encountered
+an issue where having the same id for multiple checkboxes was
+was causing the only the first checkbox to change on click regardless
+of which checkbox i clicked. -->
+  <h2 class="title">Books</h2>  
+    <div class="body-container">
+      <div class="card" style="width: 30rem;" >
+        <div class="card-body">
+          <h5>Lord of the Rings</h5>
+          <h6><em>Somebody Body</em></h6>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore, explicabo numquam autem quas odit illo minus, hic at unde quaerat rem eius non quis! Praesentium in magni ab temporibus assumenda.</p>
+          <div class="read-edit-delete">
+            <div class="checkbox-wrapper-5">
+              <div class="check">
+                <input id="check-1" type="checkbox">
+                <label for="check-1"></label>                
+              </div>            
+            </div>
+            
+            <button class="edit-btn btn btn-primary">EDIT</button>
+            <button class="remove-btn btn btn-danger">REMOVE</button>
+          </div>
+        </div>
+      </div>
+  </div>
+    
 
-          <tr>
-            <td>dsadsa</td>
-          </tr>
-        </tbody>
-    </table>
 </body>
 </html>
