@@ -48,13 +48,40 @@ of which checkbox i clicked. -->
                 <label for="check-1"></label>                
               </div>            
             </div>
-            
+
             <button class="edit-btn btn btn-primary">EDIT</button>
             <button class="remove-btn btn btn-danger">REMOVE</button>
           </div>
         </div>
       </div>
   </div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2>NEW BOOK</h2>
+      <span class="close">&times;</span>
+    </div>
+    <div class="modal-body">
+      <form id="new-book" action="">
+        <label for="title">TITLE</label><br>
+        <input type="text" name="title" id="title">
+
+        <label for="author">AUTHOR</label>
+        <input type="text" name="author" id="author">
+
+        <label for="description">SHORT DESCRIPTION</label>
+        <textarea type="text" name="description" id="description"></textarea>
+
+        <button type="submit" id="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
+</div>
     
 
 </body>
