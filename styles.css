@@ -220,7 +220,7 @@ header {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+  padding-top: 90px; /* Location of the box */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -228,6 +228,7 @@ header {
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  flex: 2;
 }
 
 /* Modal Content */
@@ -238,11 +239,16 @@ header {
   padding: 0;
   border: 1px solid #888;
   width: 25%;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.4s;
   animation-name: animatetop;
-  animation-duration: 0.4s
+  animation-duration: 0.4s;
+  flex: 1;
+  
+  /* Add scrollable height and overflow-y */
+  height: 70%; /* Adjust the height as needed */
+  overflow-y: auto;
 }
 
 /* Add Animation */
@@ -258,16 +264,14 @@ header {
 
 /* The Close Button */
 .close {
-  color: rgb(252, 3, 3);
   float: right;
   font-size: 28px;
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 .close:hover,
 .close:focus {
   color: #f80202;
-  text-decoration: none;
   cursor: pointer;
 }
 
@@ -284,6 +288,7 @@ header {
   align-items: center;
   flex-direction: column;
   gap: 5px;
+  flex: 1;
 }
 
 label {
@@ -292,17 +297,19 @@ label {
   font-weight: bold;
   color: rgb(0, 0, 0);
   letter-spacing: 1px;
+  flex: 1;
 }
 
 input {
   background-color: rgb(255, 255, 255);
   padding: 5px 5px;
-  width: 25em;
+  width: 50%;
   border-radius: 3px;
+  display: flex;
 }
 
 textarea {
-  width: 25rem;
+  width: 70%;
   height: 10rem;
   border-radius: 3px;
 }
