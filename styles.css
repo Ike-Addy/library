@@ -320,3 +320,11 @@ textarea {
 
 /* END OF MODAL STYLING */
 
+/* JS elements styling */
+.card {
+  width: 30rem;
+}
+
+#title {
+  font-size: larger;
+}

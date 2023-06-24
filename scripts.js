@@ -16,17 +16,18 @@ function newBook(e) {
 // Create a div with a class called card and a width of 30rem
     const newCard = document.createElement('div');
     newCard.className = 'card';
-    newCard.style.width = '30rem';
 // Store the new card inside the body container
     const cardsContainer = document.querySelector(".body-container");
     cardsContainer.appendChild(newCard);
-// Create another div inside the card div called cardBody
+// Create another div inside the card div called cardBody to store and styling card contents
     const cardBody = document.createElement('div');
     cardBody.className = 'card-body';
 // Inside the card body, add the book title with an h5 header
-    const form = document.getElementById('new-book');
+    // Get the form from the DOM
+    const form = document.getElementById('new-book');    
+    // Input the input value of the title into the card
+    // Set the styling of the title to h5
     
-    newCard.textContent = form.elements['title'].value;
 // Inside the card body, add the author with h6 and italics
    
 
