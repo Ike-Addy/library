@@ -325,6 +325,12 @@ textarea {
   width: 30rem;
 }
 
-#title {
-  font-size: larger;
+.title {
+  font-size: large;
+  font-weight: bold;
+}
+
+.author {
+  font-size: large;
+  font-weight: bold;
 }
