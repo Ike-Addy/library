@@ -5,66 +5,22 @@ const editBtn = document.querySelector(".edit-btn");
 const modal = document.getElementById("myModal");
 const closeModal = document.querySelector(".close");
 const submit = document.getElementById("submit");
-const bookForm = document.getElementById('new-book');
+const form = document.getElementById("new-book");
 
+submit.addEventListener('click', newBook);
 
-bookForm.addEventListener('submit', newBook);
+let myLibrary = [];
 
-// Function to add new book
-function newBook(e) {
-    // Prevent submit button from reloading page 
-    e.preventDefault();
-
-    // Create a div with a class called card and a width of 30rem
-    const newCard = document.createElement('div');
-    newCard.className = 'card';
-
-    // Stores the new card inside the body container
-    const cardsContainer = document.querySelector(".body-container");
-    cardsContainer.appendChild(newCard);
-
-    // Creates another div inside the card div called cardBody to store and style card contents
-    const cardBody = document.createElement('div');
-    cardBody.className = 'card-body';
-    newCard.appendChild(cardBody);
-
-    // Get the field values
-    const title = document.getElementById('title').value;
-    const author = document.getElementById('author').value;
-    const description = document.getElementById('description').value;
-
-    // Create text nodes
-    const titleTextNode = document.createTextNode(title);
-    const authorTextNode = document.createTextNode(author);
-    const descriptionTextNode = document.createTextNode(description);
-
-    // Append text nodes to the cardBody element
-    cardBody.appendChild(titleTextNode);
-    cardBody.appendChild(authorTextNode);
-    cardBody.appendChild(descriptionTextNode);
-
-    // Containers to store text for styling
-    const titleStyles = document.createElement('div');
-    titleStyles.className = 'title'
-    titleStyles.appendChild(title);
-    
-    const authorStyles = document.createElement('div');
-    authorStyles.className = 'author'
-    authorStyles.appendChild(title);
-
-    const descriptionStyles= document.createElement('div')
-    descriptionStyles.className = 'description'
-    descriptionStyles.appendChild(title);
+function Book(title, author, description) {
+ this.getTitle =  function() {
+    let title = document.getElementById('title')
+    return title.value
+ }
 }
 
-
-// Inside the card body, add the book title with an h5 header
-    // Get the form from the DOM
-    // Input the input value of the title into the card
-    
-    // Set the styling of the title to h5
-    
-// Inside the card body, add the author with h6 and italics
+function addBookToLibrary() {
+  // do stuff here
+}
 
 
 
